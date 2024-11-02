@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tu idea Living Tus muebles a medida">
+  <title>Tu Idea Living</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="img/logo/logo-tu-idea-living-blanco-circular-fondo.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaQueries.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" integrity="sha512-MqL4+Io386IOPMKKyplKII0pVW5e+kb+PI/I3N87G3fHIfrgNNsRpzIXEi+0MQC0sR9xZNqZqCYVcC61fL5+Vg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+</head>
+<body>
+    <header class="header">        
+        <nav class="nav-home">
+            <div class="logo-menu-movil">
+                <h1>
+                    <!-- logo-inicio movil -->
+                    <a href="../index.html">
+                        <img src="./img/logo/logo-tu-idea-living-naranja-cuadrado.png"
+                            alt="Tu Idea Living - tus muebles a medida" title="Tu Idea Living - tus muebles a medida">
+                    </a>
+                </h1>
+            </div>
+            <div class="redes-nav-movil">
+                <!-- cambiar icono gmail -->
+                <a href="https://www.instagram.com/tu.idea.living/?hl=es" target="_blank"> <i
+                        class='bx bxl-instagram'></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-meta'></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5492612585773" target="_blank"> <i
+                        class='bx bxl-whatsapp'></i> </a>
+            </div>     
+            <div class="nav-menu" id="nav-menu"> <!-- menú de navegación -->  
+               <ul>    <!--class="menu" -->
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/servicios.html">Servicios</a></li>
+                    <li><a href="./pages/podructos.html">Productos</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                <div class="nav__close" id="nav-close">
+                    <i class="ri-close-large-line"></i>
+                </div>
+            </div>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="ri-menu-line"></i>
+            </div>   
+        </nav><!-- FIN nav -->
+    </header>
+    <main class="container">
+        <section class="section-1 fondo-color"> <!-- Cuadro Color Sólido -->
+            <div class="logo"> <!-- logo-inicio -->
+                <h1>              
+                    <a href="./index.html">
+                        <img src="./img/logo/logo-tu-idea-living-con-lineas.png" alt="Tu Idea Living - tus muebles a medida" title="Tu Idea Living - tus muebles a medida">
+                    </a>
+                </h1>
+            </div> 
+            <div class="text-home">
+                <p>Diseñanos tus muebles a medida.</p> 
+                <p>Especialistas en sillones y sofás</p>                
+            </div>
+            <div class="redes"> <!-- cambiar icono gmail -->
+                <a href="https://www.instagram.com/tu.idea.living/?hl=es" target="_blank"> <i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-meta'></i></a>
+                <a href="https://www.google.com/intl/es/gmail/about/#" target="_blank"><i class='bx bx-envelope' ></i></a>
+                <a href="https://api.whatsapp.com/send?phone=5492612585773" target="_blank"> <i class='bx bxl-whatsapp'></i> </a>
+            </div>       
+        </section>
+        <div class="section-2">
+            <div class="slider">
+                <div class="slides home-slider">
+                    <img src="./img/home/sillon-1.png" alt="Imagen 1" class="img-home">
+                    <img src="./img/home/sillon-7.png" alt="Imagen 2" class="img-home">
+                    <img src="./img/home/sillon-5.png" alt="Imagen 3" class="img-home">
+                </div>
+            </div>
+        </div>
+        <div class="section-2-movil">
+            <div class="slider">
+                <div class="homeSliderMovil home-slider-movil">
+                    <img src="./img/home/home-movil-4.png" alt="Imagen 4" class="img-home-movil">
+                    <img src="./img/home/home-movil-5.png" alt="Imagen 5" class="img-home-movil">
+                    <img src="./img/home/home-movil-6.png" alt="Imagen 6" class="img-home-movil">
+                </div>
+            </div>
+        </div>  
+        <div>
+            <div class="text-home-movil">
+                <p>Fabricamos a medida.</p> 
+                <p class="right">Especialistas en sillones</p>                
+            </div>
+        </div>
+    </main>
+    <script>
+        let currentIndex = 0;
+        const slides = document.querySelector('.slides');
+        const totalSlides = document.querySelectorAll('.slides img').length;
+
+        function showNextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+        }
+
+        setInterval(showNextSlide, 5000);
+    </script>
+    <script>
+
+        let indexOf = 0;
+        const homeSliderMovil = document.querySelector('.homeSliderMovil');
+        const totalhomeSliderMovil = document.querySelectorAll('.homeSliderMovil img').length;
+
+        function showNexthomeSliderMovil() {
+            indexOf = (indexOf + 1) % totalhomeSliderMovil;
+            homeSliderMovil.style.transform = `translateX(-${indexOf * 100}%)`;
+        }
+
+        setInterval(showNexthomeSliderMovil, 5000);
+    </script>
+    <!-- MENU HAMBURGUESA -->
+    <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,1028 @@
+/* DISEÑO BASE */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+
+    /* COLORES */
+    --primario: #E76B13;
+    --secundario: #FFFBE6;
+    --terciario: #AA4215;
+    --color-titulo: #181818;
+    --color-parrafo: #292929;
+
+    /* FONTS */
+    --font-titulo: 'Swis721 Lt BT', sans-serif;
+    --font-parrafo-bold: 'Rambla', sans-serif, bold;
+    --font-parrafo-regular: 'Rambla', light sans-serif;
+    --font-parrafo-italica: 'Rambla', sans-serif, italic;
+
+    /* ESPACIADO */
+    --espaciado-grande: 6rem;
+    --espaciado-medio: 2.4rem;
+    --espaciado-pequeño: 2rem;
+    --espaciado-extrapequeño: 1rem;
+
+    /* TAMAÑOS DE FONT */
+    --text-grande: 5.2em;
+    --text-mediano: 1.25em;
+    --text-base: 1em;
+    --text-pequeño: 0.9em;
+}
+
+
+/* MEDIA QUIERIES */
+
+
+/* Desktop */
+
+@media only screen and (min-width: 1240px) {}
+
+/*------------/////////////////***********************************************\\\\\\\\\\\\\\\\\-----------*/
+
+
+/* Tablet*/
+
+/*CONTENEDOR GENERAL Grilla de 8 columnas*/
+
+@media screen and (max-width: 1024px) {
+
+
+    /* modificar a clases generales */
+
+    .padding-left h2 {
+        padding-left: 5rem;
+    }
+
+    .padding-left p {
+        padding-left: 5rem;
+    }
+
+    .padding-right p {
+        padding-right: 5rem;
+
+    }
+
+
+    /* ---------------- BOTÓN FLOTANTE WHASTAPP ------------------ */
+
+.btn-wapp{   
+
+    bottom: 20vh;
+
+    }
+
+
+.btn-wapp-logo .bx {
+    margin-top: -2.3vh;
+    margin-left: -2.5vh;
+
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+    /* BARRA MENÚ */
+
+    /* menú Especifico de las páginas */
+    /* Home*/
+    .nav-menu {
+        width: 100%;
+        margin: 0px;
+        font-family: var(--font-titulo);
+        margin-right: 1rem;
+    }
+
+    .logo-contact {
+        margin-left: 17rem;
+        margin-right: -185px;
+    }
+
+    /* menú páginas */
+    .nav {
+        width: 100%;
+        height: 5rem;
+        margin-bottom: 0px;
+        padding-top: 0%;
+    }
+
+    .logo-line img {
+        width: 100%;
+    }
+
+    /* HEADER */
+
+    .cabecera {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        background-color: var(--secundario);
+    }
+
+    .cuerpo {
+        display: flex;
+        background-color: var(--secundario);
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+    /* FOOTER */
+
+    .footer div a {
+        font-size: 0.8rem;
+
+    }
+
+    .footer-logo img {
+        padding: 2%;
+        width: 75%;
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+    /* TODAS LAS PÁGINAS*/
+
+    /*HOME */
+
+
+    .main-top {
+        margin-top: 2rem;
+    }
+
+    .text-home p {
+        font-size: 1rem;
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+    /*NOSOTROS*/
+
+    /* Grilla de sección */
+
+    .text-border {
+        height: 30px;
+    }
+
+    .text-section div h2 {
+        font-size: 0.95rem;
+    }
+
+    .text-section p {
+        font-size: 0.75rem;
+    }
+
+    .section-slider {
+        margin-left: 1rem;
+        padding-right: 15px;
+        display: grid;
+        flex-direction: row;
+        gap: 15px;
+    }
+
+    .section-2-grid .section-slider .slider {
+        width: 100%;
+        display: grid;
+        grid-column: 1 / 5;
+    }
+
+    .img-nos {
+    display: none;
+    }
+
+    .img-tablet {
+        width: 100%;
+        display: block;
+    }
+
+    .img-desktop {
+        display: none;
+    }
+
+    /* Esta .section-2-grid es general se aplica tanto en nosotros, como servicios, y debería estar aplicada a contactos */
+
+    .section-2-grid {
+        padding-top: 6%;
+        padding-bottom: 5%;
+        display: grid;
+        grid-column: 7/13;
+        max-width: 100%;
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+
+    /*SERVICIOS*/
+
+
+    /* Grilla de sección */
+
+    .half {
+        /* grid-column: 4/7; */
+        margin-bottom: 0px;
+    }
+
+    .quarter {
+        /* grid-column: 2/4; */
+        margin-bottom: 0px;
+    }
+
+    /* Slider */
+
+    .slider-serv {
+        border-color: red;
+        padding-left: 15px;
+    }
+
+    .text-service {
+        display: none;
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+    /*CONTACTOS*/
+
+    /* Grilla de sección */
+
+    /* Específico de Sección (textos, colores, etc) */
+
+    .padding-top-p {
+        padding-top: 0;
+    }
+
+    .section-2-grid .tablet-service-img {
+        margin-top: -50px;
+        display: grid;
+        grid-column: 7/13;
+        align-items: stretch;
+        align-content: center;
+    }
+
+    .icons-text-contact .icons-contact {
+        padding-left: 0px;
+    }
+
+    .iconos-contact {
+        margin-left: 5rem;
+    }
+
+    .iconos-contact .bx {
+        font-size: 1.6rem;
+    }
+
+    .text-cotatct {
+        padding-left: 2rem;
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+    /*PRODUCTOS */
+
+    /* Grilla de sección */
+
+    .grid-categorias-productos {
+        display: grid;
+        grid-column: 1/13;
+        max-width: 100%;
+        justify-content: center;
+        padding-top: 0px;
+        padding-bottom: 25px;
+
+    }
+
+    .catergoria {
+        display: grid;
+        grid-column: 1/13;
+        max-width: 100%;
+        margin-left: 1rem;
+        margin-right: 2rem;
+    }
+
+    .top {
+        margin-top: 1.5rem;
+    }
+
+    .catalog-item {
+        margin: 1.25rem;
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+
+    .item:hover {
+        background-color: var(--secundario);
+        transition: background-color .5s;
+        border: #E76B13 0.05rem;
+        overflow: visible;
+        height: auto;
+    }
+
+    .nav-contact {
+        margin-left: 9rem;
+        margin-right: 0%;
+    }
+
+    .menu-producto {
+        margin-left: -0.5rem;
+        padding-left: 10.5rem;
+
+    }
+
+    .logo-contact {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
+    .item {
+        width: 31.3vw;
+        padding: 10px 10px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        gap: 5px;
+        /* color: #181818; */
+    }
+
+    .item .item-grid-1 img {
+        width: 100%;
+    }
+
+    .item .item-grid-2 img {
+        width: 100%;
+    }
+
+    .item h4 {
+        width: 100%;
+    }
+
+    /* Específico de Sección (textos, colores, etc) */
+    .catergoria div h2 {
+        padding-left: 15px;
+        font-size: 50px;
+        color: rgb(85, 84, 84);
+        font-family: var(--font-titulo);
+        text-transform: uppercase;
+
+    }
+
+    .catergoria-linea img {
+        width: 100%;
+    }
+
+    .item p {
+        color: #181818;
+        font-size: 0.8rem;
+        font-family: var(--font-parrafo-bold);
+        text-align: start;
+    }
+
+
+}
+
+/*------------/////////////////***********************************************\\\\\\\\\\\\\\\\\-----------*/
+
+
+/* MÓVIL HORIZONTAL*/
+
+/*CONTENEDOR GENERAL Grilla*/
+
+@media screen and (max-width: 800px) {
+
+    /* MENÚ */
+
+    .nav-menu ul li a {
+        font-size: 0.8rem;
+
+    }
+
+    .logo-menu h1 img {
+        width: 4.5rem;
+    }
+
+    /* SECTION */
+    .text-section {
+        margin-top: 6px;
+    }
+
+    .text-section div h2 {
+        font-size: 0.75rem;
+    }
+
+    .catergoria-titulo {
+        font-size: 1.3rem;
+    }
+
+    /* -----------------------SERVICIOS----------------------------- */
+    .tablet-service-img {
+        padding-top: 17vh;
+    }
+
+    .slider-ser-movil {
+        margin-top: 21vh;
+    }
+
+    .text-service {
+        display: none;
+    }
+
+    .title-service {
+        display: none;
+
+    }
+
+    /* -----------------------PRODUCTOS----------------------------- */
+
+    .item p {
+        font-size: 0.65rem;
+    }
+
+    .item h4 {
+        font-size: 0.9rem;
+    }
+
+}
+
+/*------------/////////////////***********************************************\\\\\\\\\\\\\\\\\-----------*/
+
+
+                                                /* MÓVIL*/
+
+/*CONTENEDOR GENERAL Grilla*/
+
+
+@media screen and (max-width: 720px) {
+
+
+/* ---------------- BOTÓN FLOTANTE WHASTAPP ------------------ */
+
+
+/* ---------HOME SLIDER----------------- */
+
+/* .img-home{
+    display: none;
+} */
+/* .img-movil{
+    display:flex;
+} */
+.section-2 {
+    display: none;
+}
+.section-2-movil{
+    display: grid;
+    grid-column: 1/13;
+    max-width: 100%; 
+}
+.home-slider{
+    width: 100%;
+    height: 100vh;
+} 
+    .slider{
+        position: relative; 
+        width: 100%; 
+        max-width: 100%; 
+        /* margin: auto;  */
+        overflow: hidden; 
+}
+
+.homeSliderMovil { 
+    display: flex; 
+ 
+    transition: transform 1s ease; 
+}
+
+.home-slider-movil{
+    width: 100%;
+    height: 110vh;
+    
+}  
+.home-slider-movil img{
+   max-width:100%;
+    
+}  
+
+
+.section-2-movil{
+    display: grid;
+    grid-column: 1/13; 
+}
+
+
+.text-home-movil{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 15vh;
+    z-index: 1;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+
+}
+
+
+.text-home-movil p{
+    font-size: 2.1rem;
+    font-weight: 400;
+    color: var(--secundario);
+    font-family: var(--font-parrafo-regular);
+    text-align: center;
+    background: rgba(230, 107, 19, 0.8);
+    padding: 1rem;
+} 
+
+.text-home-movil p .right{
+
+}
+
+/* ---------------- BTN WhatsApp ------------------ */
+
+.btn-wapp-logo .bx{
+    margin-top: -1.3vh;
+    margin-left: -1.35vh;
+}
+
+.btn-wapp{ 
+    bottom: 33vh;
+ }
+
+
+/* ---------------- HEADER - MENÚ ------------------ */
+
+    .cabecera {
+        margin-bottom: 50px;
+    }
+    .nav{
+        justify-content: space-between;
+        padding: 0 1rem 0 1rem;
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 0;
+        background-color: var(--primario);
+        width: 100%;
+        height: 100%;
+        padding: 6rem 3.5rem 4.5rem;
+        justify-content: space-between;
+        transition: left .4s;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .nav-menu ul li {
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        font-size: 50px;
+    }
+
+    .nav-menu ul li a {
+        color: var(--secundario);
+        font-size: 1.7rem;
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+                                    /*MENÚ HAMBURGUESA*/
+
+    .nav__toggle {
+        display: block;
+    }
+
+    .nav__close {
+        display: block;
+        position: absolute;
+        color: var(--secundario);
+        top: 1rem;
+        right: 1.5rem;
+    }
+
+    /* MOSTRAR MENU */
+    .show-menu {
+        left: 0;
+    }
+
+    .nav-home {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        justify-content: space-between;
+        padding-left: 0;
+        padding-left: 2rem;
+        margin-left: 30px;
+    }
+
+    /* LOGOS */
+    .logo-menu {
+        display: none;
+    }
+
+    .logo-line {
+        display: none;
+    }
+
+    .logo-menu-movil {
+        display: flex;
+    }
+
+    .logo-menu-movil h1 img {
+        width: 3rem;
+
+    }
+
+    .redes-nav-movil {
+        display: flex;
+    }
+
+  
+    /*FIN DE LOGOS */
+
+    
+
+
+
+    .section-1 {
+        display: none;
+    }
+
+    .section-2 {
+       grid-column: 1/13;
+    }
+
+
+
+
+
+.redes-nav-movil .bx{
+    color: #E76B13;
+    width:1.8rem;
+}
+
+
+
+
+
+
+    /*--------------------------------------------------------------------------------------------*/
+
+    /*FOOTER*/
+
+    /* FOOTER */
+    .footer {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+  
+    .footer-info {
+        padding: 5% 2% 5% 2%;
+        align-items: center;
+    
+        }
+
+    .footer-redes {
+        padding: 5% 0% 5% 0%;
+
+    }
+
+
+    /*--------------------------------------------------------------------------------------------*/
+
+                                                            /*NOSOTROS*/
+
+    /* Grilla de sección */
+    .section-1-grid {
+        padding-top: 85%;
+        position: absolute;
+        grid-column: 1/13;
+    }
+
+    .section-2-grid {
+        grid-column: 1/13;
+    }
+
+
+    .text-section div h2 {
+        font-size: 1.5rem;
+        grid-column: 1/6;
+    }
+
+    .slider-nos-movil {
+        margin: 0px;
+    }
+
+    .slider-nos-movil img {
+        width: 100vw;
+        height: 40%;
+    }
+
+    .padding-top {
+        padding-top: 0px;
+    }
+
+    .section-slider-nos{
+        padding: 0%;
+        margin: 0%;
+    }
+
+    .img-nos {
+        display: none;
+    }
+
+    .text-section p {
+        font-size: 1.1rem;
+        text-align: start;
+    }
+
+    .padding-left h2 {
+        padding-left: 1.3rem;
+    }
+
+    .padding-left p {
+        padding: 1.5rem;
+
+    }
+
+    .text-border {
+        background-color: transparent;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .text-section div h2 {
+        color: #292929;
+        font-size: 1.5rem;
+    }
+
+    .bottom {
+        margin-bottom: 150vh;
+    }
+
+    .line-title {
+        display: grid;
+        grid-column: 6 / 13;
+        width: 100%;
+        padding-right: 0.5rem;
+    }
+    .bottom-movil{
+        margin-bottom: 80vh;
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+
+                                                                /*SERVICIOS*/
+
+    .none-movil {
+        display: block;
+    }
+
+    .show-in-movil {
+        display: grid;
+    }
+
+    /* Grilla de sección */
+    .section-1-grid-serv{
+        position: relative;
+        padding-top: 0;
+        
+    }
+    .section-2-grid-serv {
+        grid-column: 1/13;
+        grid-row: 1/2;
+    }
+
+    .section-2-img {
+        padding: 0px;
+        gap: 0px;
+        padding-right: 0px;
+    }
+
+
+    .all {
+     
+        grid-column: 1/13;
+    }
+
+    .quarter {
+        display: none;
+        grid-column: 1/13;
+    }
+
+    /* apariencia de imágenes */
+
+    .half {
+        display: none;
+    }
+
+    .slider-ser-movil {
+        display: grid;
+        margin-top: 5vh;
+    }
+
+.top-movil{
+    margin-top: -8vh;
+}
+
+
+    /* Posicionamiento de imágenes */
+
+    .movil-service-img1 {
+        grid-column: 1/13;
+        padding-top: 15vh;
+
+    }
+
+    /* Posicionamiento de texto*/
+    .none {
+        display: none;
+    }
+
+    .text-service-1,
+    .text-service-2,
+    .title-service,
+    .title-service2 {
+        display: grid;
+    }
+
+    .title-position {
+        margin-top: -280px;
+        margin-bottom: 0px;
+        display: grid;
+        align-items: center;
+        align-content: space-between;
+    }
+
+    .title-position h2 {
+        padding: 1rem;
+        grid-column: 1/13;
+        text-transform: uppercase;
+        gap: 1rem;
+        height: 30px;
+        display: grid;
+        align-content: center;
+        max-width: 100%;
+        color: var(--color-parrafo);
+        font-size: 2rem;
+        font-family: var(--font-titulo);
+    }
+
+    .text-asesoramiento {
+        display: grid;
+        margin-top: -140px;
+    }
+
+    .text-title {
+        color: #FFFBE6;
+        font-family: var(--font-titulo);
+        font-size: 1.2rem;
+
+    }
+
+    .text-parrafo1 {
+        font-size: 0.8rem;
+        grid-column: 1 / 13;
+        margin: -250px 0px 0px 0px;
+        color: #fff;
+        padding: 0.7rem;
+        text-justify: start;
+        font-family: var(--font-parrafo-regular);
+    }
+
+    .text-fabricacion {
+        display: grid;
+        margin-top: 100px;
+    }
+
+    /*--------------------------------------------------------------------------------------------*/
+
+
+                                                        /*PRODUCTOS*/
+                                                        
+    .catalog-item{
+        display: grid;
+        grid-column: 1/13; 
+        margin: 0px;  
+    }
+    .catergoria{
+        margin: 0%;
+    }
+
+    .item{
+        grid-column: 1/13;
+        width: 100vw;
+        padding: 20px 20px;
+    }
+    .item h4{
+        font-size: 1.2rem;
+    }
+    .item p{
+        font-size: 0.8rem;
+    }
+    .item:hover {
+        border: var(--primario) solid 0.2rem;
+
+    }
+.padding-bottom{
+    padding-bottom: 0%;
+
+}
+
+.top {
+    margin-top: 1rem;
+
+    }
+    /*--------------------------------------------------------------------------------------------*/
+
+
+                                                        /*CONTACTO*/
+
+
+    .section-1-text-contact {
+        grid-column: 1/13;
+        grid-row: 1/2;
+        position: relative;
+        padding-top: 65%;
+    }
+    .texto-1-comun{
+        margin-top: 2vh;
+    }
+
+    .text-border {
+        background-color: var(--secundario);
+    }
+    .text-section div h2 {
+        font-size: 1.5rem;
+        margin-left: 0px;
+    }
+    .text-cotatct {
+        padding-left: 0px;
+    }
+    .text-cotatct p{
+        padding: 1rem 1rem 1rem 0rem;
+    }
+    .iconos-contact {
+        margin-left: 2rem;
+        width: 2rem;
+        margin-right: 0px;
+    }
+    .iconos-contact a{
+        margin:1rem 1rem 1rem 0rem;
+    }
+
+    .icons-text-contact {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: stretch;
+    }
+    .text-section div p {
+        font-size: 1.1rem;
+        text-align: start;
+
+    }
+
+    .section-2-img-contact {
+        grid-column: 1/13;
+        grid-row: 1/2;
+        max-height: 100vh;
+    }
+
+    .section-1-iframe-contact{
+        grid-column: 1/13;
+        grid-row: 2/2;
+        position: relative;
+        padding-top: 2%;
+    }
+    .section-1-iframe-contact iframe{
+        padding: 0 1rem 0 1rem;
+        width: 100vh;
+    }
+
+    .section-2-text-contact {
+        grid-column: 1/13;
+        grid-row: 2/2;
+        padding-top: 32vh;
+    }
+    .margin-top-p{
+        margin-top: 2vh;
+    }
+    .col-4-p {
+        padding: 1rem 1rem 5rem 1rem;
+    }
+    .bottom-contact{
+        margin-bottom: 2vh;
+    }
+    
+    .right {
+        padding-right: 0px;      
+
+}
+
+
+
+
+
+}

@@ -1,0 +1,805 @@
+/* DISEÑO BASE */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Rambla:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+
+    /* COLORES */
+    --primario: #E76B13;
+    --secundario: #FFFBE6;
+    --terciario: #AA4215;
+    --color-titulo: #181818;
+    --color-parrafo: #292929;
+
+    /* FONTS */
+    --font-titulo: 'Swis721 Lt BT', sans-serif;
+    --font-parrafo-bold:'Rambla', sans-serif, bold;
+    --font-parrafo-regular:'Rambla', light sans-serif;
+    --font-parrafo-italica:'Rambla', sans-serif, italic;
+
+    /* ESPACIADO */
+    --espaciado-grande: 6rem;
+    --espaciado-medio:2.4rem ;
+    --espaciado-pequeño:2rem ;
+    --espaciado-extrapequeño:1rem ;
+
+    /* TAMAÑOS DE FONT */
+    --text-grande: 5.2em;
+    --text-mediano:1.25em;
+    --text-base:1em;
+    --text-pequeño:0.9em ;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+/* Declaraciones Globales */
+html {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    }
+  
+
+/* *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} */
+body{
+    background-color: var(--secundario);   
+}
+a{
+    list-style-type: none;
+    text-decoration: none;   
+}
+
+p{
+    margin:0;
+    padding:0;
+}
+
+/* ....................................... */
+
+.left{
+    padding-left:1rem
+}
+.left-title{
+    margin-left: 1rem;
+}
+.right{
+    padding-right: 1rem;
+}
+.bottom{
+    margin-bottom: 16.667vh;
+}
+
+.line-title{
+    display: none;
+}
+/* ---------------- BOTÓN FLOTANTE WHASTAPP ------------------ */
+
+.btn-wapp{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    bottom:12.48vh;
+    right: 1.563rem;
+    background: #25D366;    
+    border-radius: 3.125rem;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4); 
+    z-index: 100;
+}
+
+.btn-wapp-logo .bx {
+    font-size: 4.5rem;
+    margin-top: -2vh;
+    margin-left: -2vh;
+
+    }
+
+.btn-wapp-logo .bx:hover{
+    color: #ffffff;
+    background-color: var(--primario);
+    border-radius: 3.125rem;
+}
+/*--------------------------------------------------------------------------------------------*/
+
+
+                                            /* HEADER */
+
+.cabecera{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    margin-bottom: 15vh;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+.cuerpo{
+    display: flex;
+    background-color: var(--secundario);   
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+/* BARRA MENÚ */
+
+.nav{
+    margin-bottom: 5vh;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position:fixed;
+    z-index:10;  
+    background-color: var(--secundario);
+    padding-top: 3vh;
+}
+.aling-base{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu{
+    width: 100%;
+    /* margin-top: 25px; */
+    font-family: var(--font-titulo);
+}
+.menu{
+    padding-left: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+} 
+
+.menu-producto{
+    padding-left: 650px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.logo-menu h1 img{
+    width: 6rem;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+/* MENU HAMBURGUESA MOVIL */
+
+.logo-menu-movil{
+    display: none;
+}
+.redes-nav-movil{
+    display: none;
+}
+.nav__close, .nav__toggle{
+    font-size: 2rem;
+    display: flex;
+    color: var(--primario);
+    cursor: pointer;
+    display: none;
+}
+/* FIN MENU HAMBURGUESA MOVIL */
+
+.nav-home{
+    margin: 1rem;
+    position:absolute;
+    z-index:10;
+    opacity:0.9;
+ 
+}
+
+.nav-menu a:hover{
+    color:var(--primario);
+    border-bottom: 0.125rem solid var(--primario);
+}
+
+.nav-menu li{
+    display: inline-block;
+    margin: 0 0.188rem;
+    line-height: 8%;
+}
+
+.nav-menu ul li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--terciario);
+    font-size: var(--text-mediano);
+    font-family: var(--font-titulo);
+    position: relative;
+}
+
+.menu-hambur-redes{
+    display: none;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+                                    /* LOGOS MENÚ Y FOOTER  */
+
+/* logo home */
+
+
+.logo {
+    padding-top: 10%;
+}
+.logo h1 a img{
+    width: 100%;
+}
+
+/*logo menú movil*/
+.logo-menu-movil{
+    display: none;
+}
+
+/* logos redes */
+
+.redes h2{
+    width: 280px;
+    font-size:16px;
+    font-family: var(--font-titulo);
+}
+.redes {
+    margin: 0 auto;
+ }
+
+.bxl-instagram{
+    color: var(--secundario);
+    font-size: 1.875rem;
+}
+.bxl-meta{
+    color: var(--secundario);
+    font-size: 1.875rem;
+}
+.bx-envelope{
+    color: var(--secundario);
+    font-size: 1.875rem;
+}
+.bxl-whatsapp{
+    color: var(--secundario);
+    font-size: 1.875rem;
+}
+
+.bx-at{
+    font-size: 1.875rem;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+                            /*CONTENEDOR GENERAL Grilla de 12 columnas*/
+
+.fondo-color{
+    background-color:var(--primario);
+}
+.container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    max-width: 100% !important; 
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    overflow: visible;   
+    position: relative;
+    background-color: var(--secundario);
+    
+}
+/*--------------------------------------------------------------------------------------------*/
+
+                                            /* FOOTER */
+
+.footer{
+    background-color: var(--primario);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+ 
+}
+.footer div a{
+    color: var(--secundario);
+    font-size: var(--text-base);
+    font-family: var(--font-titulo);
+}
+.footer div a:hover{
+    color:var(--terciario);   
+}
+.footer-info{
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.footer-logo {
+    display: flex;
+    justify-content: center;
+}
+.footer-logo img{
+    width: 100%;
+}
+.footer-redes{
+    display: flex;
+    flex-direction: row;
+    padding:2% 2% 2% 10%;
+    /* padding-left: 70px; */
+} 
+.footer-home-movil{
+    display: none;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+                                        /* TODAS LAS PÁGINAS*/ 
+
+
+/* Slider General de todas las páginas*/
+
+
+.slider { 
+    position: relative; 
+    width: 100%; 
+    max-width: 100%; 
+    /* margin: auto;  */
+    overflow: hidden; 
+}
+.slides { 
+    display: flex; 
+    transition: transform 1s ease; 
+}
+
+
+.slides img { 
+    max-width: 100%; 
+    flex-shrink: 0; 
+}
+
+.section-slider{
+    padding-right:15px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+/*--------------------------------------------------------------------------------------------*/
+
+                                                 /*HOME */
+
+/* Grilla de sección */
+
+.text-home-movil{
+    display: none;
+}
+
+
+.section-1{
+    display: grid;
+    grid-column: 1/5;
+    max-width: 100%; 
+    justify-content: center;
+    align-content: space-around;    
+}
+.section-2{
+    display: grid;
+    grid-column: 5/13;
+    max-width: 100%;       
+}
+.section-2-movil{
+    display: none;
+}
+
+
+/* Específico de Sección (textos, colores, etc) */
+
+.text-home{    
+    width: 100%;
+    margin: 0 auto;
+}
+
+.text-home p{
+    font-size: 3rem;
+    color: var(--secundario);
+    font-family: var(--font-parrafo-regular);
+    text-align: center;
+} 
+
+ .home-slider{
+    height: 100vh;
+} 
+
+.slider-1-home { 
+    display: grid;
+    position: relative; 
+    width: 100%; 
+    max-width: 100%; 
+    /* margin: auto;  */
+    overflow: hidden; 
+}
+.slider-2-home {
+    display: none;
+}
+/*--------------------------------------------------------------------------------------------*/
+
+                                            /*NOSOTROS*/
+
+                                    /* Grilla de sección */
+
+
+.show-in-movil{
+    display: none;
+}                                   
+
+.section-1-grid{
+    padding-top: 6%;
+    padding-bottom:6%;
+    display: grid;
+    grid-column: 1/6;
+    max-width: 100%;     
+}
+
+/* Específico de Sección (textos, colores, etc) */
+
+.text-border{
+    display:grid;
+    align-content: center;
+    height: 45px;
+    background-color:var(--terciario);    
+}
+
+.text-section div h2{
+    max-width: 100%;
+    color: var(--secundario);
+    font-size: var(--text-mediano);
+    font-family:var(--font-titulo);
+}
+.text-section p{
+    padding-top: var(--espaciado-extrapequeño);   
+    color: var(--color-parrafo);
+    font-size:var(--text-base);
+    font-family:var(--font-parrafo-regular);
+}
+
+.slider-nos { 
+    width: 100%; 
+    }
+
+.img-nos{
+    grid-column: 1 / 4;
+    padding-top: 9vh;
+    padding-right: 1rem;
+}
+
+.img-nos img{
+    width: 100%;
+}
+
+.img-tablet{
+    display: none;
+}
+
+
+
+.padding-left h2{
+    padding-left: 7rem;
+}
+
+.padding-left p{
+    padding-left: 7rem;
+}
+.padding-right p{
+    padding-right: 5rem;
+}
+.padding-top{
+    padding-top: 9vh;
+}
+.padding-bottom{
+    padding-bottom: 10.417vh;
+}
+
+.section-2-grid{
+    padding-top: 6%;
+    padding-bottom:5%;
+    display: grid;
+    grid-column: 7/13;
+    max-width: 100%;        
+}
+.section-slider-nos {
+    padding-right: 15px;
+    display: grid;
+    flex-direction: row;
+    grid-column: 4 / 13;
+
+    }
+
+/*--------------------------------------------------------------------------------------------*/
+
+ 
+                                            /*SERVICIOS*/
+
+
+.text-service{
+    display: none;
+}
+.title-service{
+    display: none;
+
+}
+
+
+
+.section-serv-1{
+    padding-top: 6.51vh;
+    display: grid;
+    grid-column: 1/5;
+    max-width: 100%;     
+}
+.section-serv-2{
+    padding-top: 6.51vh;
+    display: grid;
+    grid-column: 7/13;
+    max-width: 100%;        
+}
+.section-2-img{
+    margin-top: 6.51vh;
+    padding-right: 15px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    justify-items: stretch;
+    align-items: end;
+ } 
+
+.section-2-img div img{
+    width: 100%;
+    height: 100%;
+}
+.all{
+    grid-column: 1/7;
+}
+.half{
+      grid-column: 4/7;
+}
+.quarter{
+    grid-column: 2/4;
+}
+
+.solido-marron{
+    display: none;
+}
+
+.solido-naranja{
+    display: none;
+}
+
+.padding-right div h2{
+    padding-left: 0.625rem;
+}
+.text-border h2{
+    font-family: var(--font-titulo);
+    font-size: var(--text-mediano);
+}
+.left-title{
+    padding-left: 1rem;
+}
+
+.col-4-p{
+    padding-right: 7rem;
+} 
+/*--------------------------------------------------------------------------------------------*/
+
+
+                                            /*PRODUCTOS */
+
+/* Grilla de sección */
+
+.grid-categorias-productos{
+    display: grid;
+    grid-column: 1/13;
+    max-width: 100%;
+    justify-content: center;
+    padding-top: 3.256vh;
+    padding-bottom: 3.256vh;
+    
+}
+.catergoria{
+    display: grid;
+    grid-column: 1/13;
+    max-width: 100%;
+    align-items: center;
+    margin: 1rem;
+}
+
+.item:hover{    
+    /* -webkit-transform: scale(1);
+    transform: scale(1); */
+    background-color: var(--secundario);
+    transition: background-color .5s;
+    border: var(--primario) solid 0.2rem;
+    overflow: visible;
+    height: auto;
+    box-shadow: #0a0a0a;
+}
+
+
+.top{
+    margin-top:60px ;
+}
+.catergoria-titulo{
+    padding: 1.481vh;
+    display: grid;
+    grid-column: 1 / 3;
+    max-width: 100%;
+    align-content: center;
+    font-size: 2rem;
+    color: var(--terciario);
+    font-family: var(--font-titulo);
+    text-transform: uppercase;
+    /* width: 10rem;
+    height: 2rem; */
+}
+
+.title-2{
+    padding: 0;
+    display: grid;
+    grid-column:  9/ 13;
+} 
+.catergoria-linea{
+    display: grid;
+    grid-column: 3/13;
+    max-width: 100%;
+    align-content: center;
+}
+
+.line-2{
+    display: grid;
+    grid-column: 1/9;
+}
+.catalog-item{
+    display: grid;
+    grid-column: 1 / 13;
+    justify-content: start;
+}
+
+
+.item-grid-1{
+    display:grid;
+    grid-column: 1/3;
+}
+.item-grid-2{
+    display:grid;
+    grid-column: 3/6;
+}
+.item-grid-3{
+    display:grid;
+    grid-column: 6/9;
+}
+.item-grid-4{
+    display:grid;
+    grid-column: 9/13;
+}
+
+.item{
+    margin-bottom: 0.2rem;
+    width:24vw;
+    /* height: 45vh; */
+    padding:15px 15px;
+    gap:10px;
+    color: #181818;
+    font-family: var(--font-parrafo-bold);
+    text-align: start;
+    
+}
+
+.item img{
+    width:100%;
+}
+
+
+/*----------------- mejorar grilla de productos o modificar hover-------------------------  */
+
+.item p{
+   /* width: 22vw;    <<<<<<------------------------------- cambiar y arreglar esta variante  ------------------------------*/
+    color: #181818;
+    font-family: var(--font-parrafo-regular);
+    text-align:start;
+} 
+
+.stock-alert{
+    position: absolute;
+    display: block;
+}
+button{
+    width: 5rem;
+    height: 2.5rem;
+    border-radius: 0.3rem;
+    background-color: #AA4215;
+    color: #FFFBE6;
+    display: grid;
+    align-content: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+/*--------------------------------------------------------------------------------------------*/
+
+
+
+                                            /*CONTACTOS*/
+
+/* Grilla de sección */
+
+
+.margin-top-p{
+   margin-top: 5vh; /*  2vh */
+}
+.img-contact img{
+    width: 100%;
+    max-width: 100%;
+}
+.section-1-grid-iframe iframe {
+    padding-left: 1.481vh;
+    width: 100%;
+    max-width: 100%;
+}
+.icons-text-contact{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+.iconos-contact{
+    display: flex;
+    flex-direction: column;
+    margin-left: 7rem;
+    margin-right: -100px;
+}
+.iconos-contact .bx{
+    /* display: list-item; */
+    color: #181818;
+}
+
+.text-cotatct{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
