@@ -102,6 +102,7 @@ p{
     font-size: 4.5rem;
     margin-top: -2vh;
     margin-left: -2vh;
+    text-shadow: 2px 2px 5px black;
 
     }
 
@@ -768,17 +769,43 @@ button{
     display: flex;
     flex-wrap: nowrap;
     align-items: flex-end;
+    padding-top: 1rem;
 }
 .iconos-contact{
     display: flex;
     flex-direction: column;
     margin-left: 7rem;
-    margin-right: -100px;
+    /* margin-right: -100px; */
+    width: 20rem;
 }
-.iconos-contact .bx{
+.iconos-contact .bx, .bx-at{
     /* display: list-item; */
-    color: #181818;
+    color: #000000;
+    padding-right: 1rem;
 }
+
+.iconos-contact li{
+    display: flex;
+    flex-wrap: wrap;
+}
+.iconos-contact li a{
+    text-decoration: none;
+    font: 1em;
+    font-family: var(--font-parrafo-regular);
+    color: #000;
+    padding: 0.4rem;
+}
+
+
+.iconos-contact .bx-at {
+font-size: 1rem;
+}
+.iconos-contact .bx-envelope {
+    font-size: 1rem;
+    }
+.iconos-contact .bxl-whatsapp {
+    font-size: 1rem;
+ }
 
 .text-cotatct{
     display: flex;
