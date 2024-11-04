@@ -42,3 +42,10 @@ function showNexthomeSliderMovil() {
 }
 
 setInterval(showNexthomeSliderMovil, 5000);
+
+
+/* Catalogo hover cambio img */
+
+function Cambiar(imagen){
+    document.getElementById(imagen).src = 'otraimg.png';
+}
